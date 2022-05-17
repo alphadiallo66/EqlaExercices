@@ -1,0 +1,81 @@
+ gt: <!DOCTYPE html>
+<html lang="fr-BE">
+	<head>
+		<meta charset="utf-8" />
+		<title>Tableau avec commentaires</title>
+	</head>
+<body>
+		<h1>Les tableaux</h1>
+		<table border="1px"><!--Les balises <table> et </table> contiennent le tableau (même logique que <ul> pour listes à puces)--> 
+      <!--Attention, ne pas utiliser de border dans le html. Uniquement valable dans le cadre de l'exercice sans connaissance du CSS-->
+      <caption>Comment j'ai choisi de dépenser mon argent</caption><!--<caption> permet d'ajouter un titre qui accompagne le tableau même si on le lit hors contexte avec une synthèse vocale-->
+      <!--colspan pour regrouper plusieurs cellules en une/ Colspan = horizontal et rowspan = vertical-->
+      <!--Accessibilité avec scope col et row pour relier les entêtes aux cellules-->
+      <thead><!--<thead> et </thead> englobent l'entête du tableau (les titres de colonnes). Cette balise n'est pas obligatoire mais permet de styler plus facilment le tableau en CSS-->
+      <tr><!--<tr> et </tr> englobent chaque ligne horizontale du tableau (td = table row)-->
+			<th scope="col">Achats</th><!--<th> identifie une cellule qui contient le titre de la ligne ou de la colonne. Il est important de respecter th pour les synthèses vocales-->
+			<th scope="col">Où ?</th><!--l'attribut scope="col" permet aux synthèses vocales de faire le lien avec la cellule du tableau et le titre de la colonne? scope="row" est à utiliser si la ligne contient une cellule d'entête. Bref, un th plutôt qu'un td-->
+			<th scope="col">Date</th>
+			<th scope="col">Avis</th>
+			<th scope="col">Coût (€)</th>		
+      </tr>
+      </thead>
+      <tfoot><!--la balise tfoot contient les cellules de fin du tableau. Elle n'est pas obligatoire mais doit se trouver avant le corps du tableau (donc avant tbody). Elle contiendra par exemple un total.-->
+      <tr>
+      <th colspan="4" scope="row">Total global</th><!--<td> est utilisé pour les cellules de données (table data). Elle se trouve dans un tr-->
+        <!--l'attribut colspan permet de fusionner un certain nombre de cellules horizontales. Dans ce cas-ci, 4 cellules sont fusionnées pour former une longue cellule. L'attribut rowspan permet de fusionner des cellules verticales-->
+      <td>118</td>
+      </tr>
+       </tfoot>
+       <tbody><!--Balise de corps de tableau non obligatoire mais très utile comme tfoot et thead pour designer le tableau-->
+          <tr>
+            <th scope="row">Coupe de cheveux</th><!--Rappel : th pour entête de ligne et scope="row" pour que les synthèses vocales fassent le lien entre la cellule et le titre de la ligne-->
+            <td>Coiffeur</td>
+            <td>12/09</td>
+            <td>Bonne idée</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <th scope="row">Lasagnes</th>
+            <td>Traiteur</td>
+            <td>12/09</td>
+            <td>Regrets</td>
+            <td>18</td>
+          </tr>
+          <tr>
+            <th scope="row">Souliers</th>
+            <td>Chaussures</td>
+            <td>13/09</td>
+            <td>Gros regrets</td>
+            <td>65</td>
+          </tr>
+          <tr>
+            <th scope="row">Dentifrice</th>
+            <td>Supermarché</td>
+            <td>13/09</td>
+            <td>Bien</td>
+            <td>5</td>
+          </tr>
+        </tbody>
+    </table>
+    </body>
+    </html>
+
+<!-- 
+
+Les lecteurs d'écran reconnaîtront un balisage structuré : 
+
+Ajouter un titre aux tableaux avec <caption>,
+L'attribut scope (col et row) permettra à leurs utilisateurs de lire en une fois une colonne ou une ligne entière par exemple. 
+
+Remarque : 
+
+L'ajout d'une structure avec <thead>, <tfoot>, et <tbody> ne rendent pas le tableau plus accessible aux utilisateurs de lecteurs d'écran, et n'entraînent aucune amélioration visuelle par eux-mêmes. Ils sont cependant très utiles pour la présentation et la mise en page — agissant comme des accroches pour l'ajout des CSS. 
+
+-->	
+
+<!-- 	Source de l'exercice : https://developer.mozilla.org/fr/docs/Apprendre/HTML/Tableaux/Advanced
+ -->	
+	
+	
+	

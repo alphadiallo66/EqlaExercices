@@ -1,0 +1,163 @@
+function FirstQuestion() 
+{
+    let _firstNumber= Math.floor(Math.random()*100);
+    let _secondtNumber= Math.floor(Math.random()*100);
+    let _reset= _firstNumber+_secondtNumber
+    let _userAnswer= parseInt(prompt("Calculez : \n"+_firstNumber+"+"+_secondtNumber));
+    if(_reset==_userAnswer)
+    {
+        return "Vous avez eu la bonne réponse !";
+    }
+    else
+    {
+        return "Mauvaise réponse, la bonne réponse était " + _reset
+    }
+}
+alert(FirstQuestion())
+
+function SixthQuestion()
+{
+    let _reset6 = "0,05"
+    let _userAnswer6 = prompt(" En allant au marché, vous achetez une bouteille d'eau et un gobelet. Les 2 coûtent 1,10 €. Sachant que la bouteille d'eau coûte 1 € de plus que le gobelet, combien coûte le gobelet séparemment (réponse en écrire euro) ?")
+    if(_reset6==_userAnswer6)
+    {
+        return "Vous avez eu la bonne réponse !"
+    }
+    else
+    {
+        return "Mauvaise réponse, la bonne réponse était "+_reset6
+    }
+}
+alert(SixthQuestion())
+
+function SecondQuestion() 
+{
+    let _firstNumber= Math.floor(Math.random()*100);
+    let _secondtNumber= Math.floor(Math.random()*100);
+    let _reset2= _firstNumber-_secondtNumber
+    let _userAnswer2= parseInt(prompt("Calculez : \n"+_firstNumber+"-"+_secondtNumber));
+    if(_reset2==_userAnswer2)
+    {
+        return "Vous avez eu la bonne réponse !";
+    }
+    else
+    {
+        return "Mauvaise réponse, la bonne réponse était "+ _reset2
+    }
+}
+alert(SecondQuestion())
+
+
+function ThirstQuestion()
+{
+    let _reset3 = 1830
+    let _userAnswer3 = parseInt(prompt("Quel est la date d'indépendance de la Belgique ?"))
+    if(_reset3==_userAnswer3)
+    {
+        return "Vous avez eu la bonne réponse !"
+    }
+    else
+    {
+        return "Mauvaise réponse, la bonne réponse était "+_reset3
+    }
+}
+alert(ThirstQuestion())
+
+
+function FourthQuestion()
+{
+    let _reset4 = "Espagne"
+    let _userAnswer4 = prompt("Quelle équipe a gagnée la coupe du monde 2010 ?")
+    if(_reset4==_userAnswer4)
+    {
+        return "Vous avez eu la bonne réponse !"
+    }
+    else
+    {
+        return "Mauvaise réponse, la bonne réponse était "+_reset4
+    }
+}
+alert(FourthQuestion())
+
+
+function FivethQuestion()
+{
+    let _reset5 = "Abdou"
+    let _userAnswer5 = prompt("Qui est le plus grand chômeur d'Eqla ?")
+    if(_reset5==_userAnswer5)
+    {
+        return "Vous avez eu la bonne réponse !"
+    }
+    else
+    {
+        return "Mauvaise réponse, la bonne réponse était "+_reset5
+    }
+}
+alert(FivethQuestion()) 
+
+
+function SeventhQuestion()
+{
+    let _reset7 = "Ottawa"
+    let _userAnswer7 = prompt(" Quel est la capitale du Canada ?")
+    if(_reset7==_userAnswer7)
+    {
+        return "Vous avez eu la bonne réponse !"
+    }
+    else
+    {
+        return "Mauvaise réponse, la bonne réponse était "+_reset7
+    }
+}
+alert(SeventhQuestion())
+
+
+function EighthQuestion()
+{
+    let _reset8 = "blanc"
+    let _userAnswer8 = prompt(" Quel est la couleur du cheval blanc de Napoléon ?")
+    if(_reset8==_userAnswer8)
+    {
+        return "Vous avez eu la bonne réponse !"
+    }
+    else
+    {
+        return "Mauvaise réponse, la bonne réponse était "+_reset8
+    }
+}
+alert(EighthQuestion())
+
+
+function NinethQuestion()
+{
+    let _reset9 = "\\n"
+    let _userAnswer9 = prompt(" Dans une chaine de caractère, comment fait-on pour passer à la ligne ?")
+    if(_reset9==_userAnswer9)
+    {
+        return "Vous avez eu la bonne réponse !"
+    }
+    else
+    {
+        return "Mauvaise réponse, la bonne réponse était "+_reset9
+    }
+}
+alert(NinethQuestion())
+
+function TenthQuestion()
+{
+    let _reset10 = "8"
+    let _userAnswer10 = prompt(" Il y a combien de planète dans le systhème solaire ?")
+    if(_reset10==_userAnswer10)
+    {
+        return "Vous avez eu la bonne réponse !"
+    }
+    else
+    {
+        return "Mauvaise réponse, la bonne réponse était "+_reset10
+    }
+}
+alert(TenthQuestion())
+
+
+
+

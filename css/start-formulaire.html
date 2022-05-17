@@ -1,0 +1,103 @@
+﻿<!doctype html>
+<html lang="fr-BE">
+	<head>
+	<meta charset="utf-8">
+	<title>La base des formulaires</title>
+</head>
+<body>
+<form name="inscription" id="inscription" method="post" action="">
+	<!--name pour lien avec la DB, id pour le CSS, method post et get, action est la page de traitement des informations-->
+<h1>Abonnement à la Newsletter</h1>
+	<fieldset><!--Regroupe visuellement et sémentiquement des éléments de la même famille-->
+   <legend> Vos coordonnées </legend> <!--Donne un nom au fildset lu par la synthèse vocale-->
+				<p>
+				<label for="nom"> Nom : </label><input type="text" name="nom" autocomplete="family-name" id="nom" placeholder="Champ obligatoire" required autofocus/>
+				</p>
+				<!--choisir le type de l'input en fonction du type de donnée à utiliser. le name est le nom du champ envoyé en base de données, autocomplete permet, si le navigateur est paramétré comme tel, de récupérer les informations enregistrées par l'utilisateur. Recommandé en accessibilité. Le placeholder est une information visible dans le champ en grisé et qui s'efface lorsqu'on commence à entrer du texte. Pas top du tout en accessibilité. Required rend le champ obligatoire et autofocus positionne le focus directement sur ce champ.-->
+				<!--Le label est le plus proche possible du input est sont liés sémantiquement avec for (label) et id (input). Le label peut se positionner au dessus du input en CSS. C'est le top en accessibilité-->
+				<p> 
+				<label for="prenom">Prénom : </label><input type="text" name="prenom" id="prenom"/>
+				</p>
+				<p>
+				<label for="email">E-Mail : (exemple : jean.dupond@mail.com)</label><input type="email" name="email" id="email" placeholder="Champ obligatoire" required/>
+				</p>
+				<!--En accessibilité, renseigner un exemple lorsqu'un format est demandé)-->
+				<p>	
+				<label for="pays">Pays :</label><select id="pays" name="pays">
+				  <optgroup label="Europe"> 
+					<option value="belgique" selected="selected">Belgique</option>
+					<option value="france">France</option> 
+					<option value="allemagne">Allemagne</option> 
+				  </optgroup> 
+				  <!--optgroup rassemble des éléments de même famille. le selected permet de sélectionner un des éléments par défaut-->
+				  <optgroup label="Amérique du Nord"> 
+					<option value="etatsunis">États-Unis</option> 
+					<option value="canada">Canada</option> 
+				  </optgroup> 
+				  <optgroup label="Asie"> 
+					<option value="japon">Japon</option> 
+					<option value="chine">Chine</option> 
+				  </optgroup> 
+				  </select>
+				</p>
+				<p>
+					<label for="naissance" >Date de naissance : </label><input type="date" name="naissance" id="naissance"/>
+				</p>
+				<p>
+					<label for="ci">Copie carte d'identité (word ou pdf): </label><input type="file" name="ci" id="ci" required accept=".doc,.docx,.pdf"/>
+				</p>
+				<!--accept permet de spécifier le type de document possible de télécharger. On peut également limiter le poids-->
+			</fieldset>
+			<br />
+			<fieldset>
+				<legend>Thèmes souhaités</legend>
+				<input id="theme1" type="checkbox" name="themes" value="sport">
+				<label for="theme1">Sport</label>
+				<input id="theme2" type="checkbox" name="themes" value="cuisine">
+				<label for="theme2">Cuisine</label>
+				<input id="theme3" type="checkbox" name="themes" value="voyage">
+				<label for="theme3">Voyages</label>
+				<input id="theme4" type="checkbox" name="themes" value="relax">
+				<label for="theme4">Relaxation</label>
+			</fieldset>
+			<!--Checkbox sont des cases à cocher. Plusieurs options possibles-->
+			<br />
+			<fieldset>
+				<legend>Type d'abonnement souhaité </legend>
+				<p>
+				<input type="radio" name="periode" id="periodeH" value="hebdo" checked/><label for="periodeH">Newsletter hebdomadaire</label><br />
+				<input type="radio" name="periode" id="periodeM" value="mens" /><label for="periodeM">Newsletter mensuelle</label><br />
+				<input type="radio" name="periode" id="periodeT" value="trim" /><label for="periodeT">Newsletter trimestrielle</label> </p>
+			</fieldset>
+			<!--Boutons radio : un seul choix possible-->
+			<br>
+			<fieldset>
+				<legend>Modalités de réception</legend>
+			<p>
+				<label for="duree">Durée de l'abonnement en mois (3 à 12)</label>
+				<input type="number" id="duree" name="duree" min="3" max="12">
+			</p>
+			<p>
+				<label for="heure">Heure de réception souhaitée </label>
+				<input type="time" name="heure" id="heure">
+			</p>
+			<p>
+				<label for="importance">Degré d'importance (0 à 100 par tranches de 10)</label>
+				<input type="range" name="importance" id="importance" min="0" max="100" step="10" value="0">
+			</p>
+			</fieldset>
+<br>
+
+			<input type="submit" name="valid" id="valid" value="Je m'abonne" />
+			<!--Un nom explicite dans le bouton pour renseigner à l'utilisateur la suite de son action sur ce bouton (value)-->
+	</form>
+<!--TO to
+Autocomplete
+Grouping with role="group"
+Recherche en cachant le label
+Aides au remplissage
+Pas aria-label et title sur boutons ou liens explicites
+-->
+
+</body>
+</html>

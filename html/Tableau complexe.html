@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html lang="fr-BE">
+    <head>
+        <meta charset="utf-8">
+        <title>tableaux start</title>
+    </head>
+    <body> 
+        <div id="skip">
+            <a href="#main"></a>
+        </div>
+        <header role="banner">
+        </header>
+        <nav role="navigation">
+        </nav>
+        <main role="main" id="main" tabindex="-1">
+            <h1>Les tableaux complexe</h1>
+            <table border="1px">
+                <caption>
+                    exemple de couple de couleur avec contraste
+                    les couleurs d'écriture et de fond sont présentées sur deux colonnes; la première pour indiquer le nom de la couleur, et l'autre pour indiquer son code hexadésimale.
+                    Afin, la 5ème colonne indique le contraste entre ces deux couleurs
+                </caption>
+                <tr>
+                    <th colspan="2" id="ce"> couleur d'écriture</th>
+                    <th colspan="2" id="cf">couleur de fond</th>
+                    <th rowspan="2" scope="col">contraste</th>
+                </tr>
+                <tr>
+                    <th id="cen">nom</th>
+                     <th id="cec">code</th>
+                     <th id="cfn">nom</th>
+                     <th id="cfc">code</th>
+                </tr>
+                <tr>
+                    <td headers="ce cen"> gris artoise foncé</td>
+                        <td headers="ce cec"> #2f4f4f</td>
+                        <td headers="cf cfn">#blanc</td>
+                        <td headers="cf cfc">#ffffff</td>
+                        <td>8,9:1</td>
+                </tr>
+                <td headers="ce cen"> bleu foncé</td>
+                <td headers="ce cec"> #1e90ff</td>
+                <td headers="cf cfn">#noir</td>
+                <td headers="cf cfc">#6,5:1</td>
+                <td>8,9:1</td>
+             </tr>
+               <td headers="ce cen"> turquoise foncé</td>
+               <td headers="ce cec"> #00ced1</td>
+               <td headers="cf cfn">#blanc</td>
+               <td headers="cf cfc">#ffffff</td>
+               <td>2:1</td>
+            </tr>
+            </table>
+
+            </table>
+            <h2>ligne t'entête version1</h2>
+        </main>
+        <footer role="contentinfo">
+        </footer>
+       
+    </body>
+</html>

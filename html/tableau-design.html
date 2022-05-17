@@ -1,0 +1,111 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8"/>
+		<title>Un beau tableau</title>
+		<body>
+			<div id="skip">
+				<a href="#main"></a>
+			</div>
+			<header role="banner">
+			</header>
+			<nav role="navigation">
+			</nav>
+			<main role="main" id="main" tabindex="-1">
+		</body>
+	<style>
+		body
+		{
+	text-align:center; /* Centre le titre */
+	font-family: Arial, Helvetica, sans-serif;
+		}	
+		table
+	{
+	font-size: 1em;
+	width: 480px;
+	margin:auto; /* Centre le tableau */
+	text-align: left;
+	border-collapse: collapse; /* les bordures d'un tableau sont fusionnées */
+	}
+table th
+	{
+	padding: 0.5em;
+	font-weight: normal;
+	font-size: 1.2em;
+	color: #039;
+	background: #b9c9fe;
+	}
+table td
+{
+	padding: 0.5em;;
+	background: #e8edff;
+	border-top: 1px solid #fff; /* Une bordure uniquement au dessus des cellules */
+	color: #669;
+	font-weight: bolder;
+}
+table tfoot td
+{
+	background: #F3C5F3;
+	text-align:center;
+	font-style:italic;
+}
+table tbody tr:hover td
+{
+	background: #F3C5F3; /* Effet au survol de la ligne, les cellules de celle-ci se colorent  */
+}
+	</style>
+	</head>
+	<body>
+       <h1>Un beau tableau</h1>
+	<caption>Données des entreprises numérique</caption>
+	<table>
+    <thead>
+    	<tr>
+        	<th scope="col">Company</th>
+            <th scope="col">Q1</th>
+            <th scope="col">Q2</th>
+            <th scope="col">Q3</th>
+            <th scope="col">Q4</th>
+        </tr>
+    </thead>
+        <tfoot>
+    	<tr>
+        	<td colspan="5">Données fictives !!</td>
+        </tr>
+    </tfoot>
+    <tbody>
+    	<tr>
+        	<th scope="row">Microsoft</th>
+            <td>20.3</td>
+            <td>30.5</td>
+            <td>23.5</td>
+            <td>40.3</td>
+        </tr>
+        <tr>
+        	<th scope="row">Google</th>
+            <td>50.2</td>
+            <td>40.63</td>
+            <td>45.23</td>
+            <td>39.3</td>
+        </tr>
+        <tr>
+        	<th scope="row">Apple</th>
+            <td>25.4</td>
+            <td>30.2</td>
+            <td>33.3</td>
+            <td>36.7</td>
+        </tr>
+        <tr>
+        	<th scope="row">IBM</th>
+            <td>20.4</td>
+            <td>15.6</td>
+            <td>22.3</td>
+            <td>29.3</td>
+        </tr>
+    </tbody>
+</table>
+<footer role="contentinfo">
+</footer>
+	</body>
+</html>
