@@ -1,0 +1,24 @@
+A) Créer 1 page HTML d'accueil (index.html) et 2 pages qui seront des articles (event.html et media.html). Tout votre site portera sur une personnalité de votre choix (star, athlète,...)
+	1) Chaque élément de la page que je décris ci-après doit avoir un ID unique qui explique au mieux sa fonction. VOUS DEVREZ BIEN VOUS SOUVENIR DE CHACUN DES ID !!
+	2) Chaque groupe d'élément de la page qui ont des fonctions similaires dans ce que je décris ci-après devront avoir la même class. 
+	3) La page Index doit être composée de et 3 sous-titre h2. Chaque h2 correspond à un élément de la biographie de la personne (histoire, famille, enfance, philosophie, carrière,...). En dessous de chaque h2, un paragraphe suivra avec les informations correspondantes au h2. Veillez aussi à incorporer une petite image pour illustrer chacun des paragraphes.
+	4) Il doit y avoir un titre, un footer et une navbar. Dans votre footer il y aura votre copyright, dans la navbar, une navigation pour aller sur les articles et l'index. Ces 2 éléments doivent être présents sur TOUTES vos pages !!
+	5) L'article event.html sera une succession des évènements marquant de la personne classée par décénie. Un titre h2 représentera une décénie, suivra ensuite une liste des évènements qui ont été réalisé par cette personne durant cette décénie
+	6) media.html sera composée de 2 grande partie. un h2 image et un h2 vidéo. pour chacun de ceux-ci, 3 h3 qui seront les titres des images ou vidéo qui suivront.
+	7) Dans chaque footer. En dessous du copyright, un bouton devra être présent avec écrit dedans "try me".
+	8) L'accessibilité doit être respectée partout !
+	9) Créez aussi 3 dossier. Un pour le CSS, un pour le JS et un pour les ressources ( dedans, vous pouvez créer autant de sous dossier que vous voulez pour vidéo, photo,...). Créez aussi un ficher CSS et JS pour chacune de nos page internet
+	10) Linkez tout ensemble. Même si les CSS et les JS sont vide pour le moment.
+	11) Ajoutez du CSS du mieux que vous pouvez, l'idée et surtout de me prouver que vous savez maîtriser le CSS, pas besoin que tout soit parfait. Modifiez quelques couleurs, quelques tailles,... Le rendu visuel n'a pas d'importance !
+
+B) Le Javascript
+	1) Récupérer à l'aide d'un prompt le nom de l'utilisateur de la personne. Insérer un nouveau paragraphe dans le footer qui dit au revoir à la personne
+	2) Cliquer sur le bouton dans le footer de chacune des page changera le site de écrit en noir sur fond blanc à écrit en blanc sur fond noir. 
+	3) Faire apparaître une image pour remonter en haut de la page quand on a scroll sur le site. Appuyer sur la touche U du clavier nous mènera aussi tout en haut du site, par contre D nous amènera tout en bas.
+	4) Jouer un son quand on passe la souris au dessus d'une image
+	5) Créer un petit encart quelque par sur votre site avec une image de publicité pour le produit de votre choix. Si je clique sur l'image, cela me mène vers le site de la marque. La subtilité et que toutes les 5 secondes, c'est une nouvelle pub qui s'affiche dans cet encart. Il doit en tout y avoir 3 pubs qui tournent en boucle.
+	6) Dans le footer, affichez la date, qui s'actualisera toutes les secondes avec vos connaissances et en vous inspirant de cette documentation : https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-1.php
+	7) Dans le dernier script (de la date). Commentez CHAQUE LIGNE pour me dire ce qu'elle fait. Pour rappel un commentaire s'écrit comme suit //. Exemple :
+	if(age=>18){// Je regarde si l'âge est égal à 18, si oui j'exécute le code dans les accolades
+	8) https://www.w3resource.com/javascript-exercises/javascript-basic-exercise-10.php
+		Insipirez vous de cette doc pour créer le même module avec 2 boutons supplémentaires, un pour l'addition et un pour la soustraction. On aura donc sur la page HTML de votre choix 2 champs de formulaires, 4 boutons et en fonction du bouton pressé cela exécutera l'une ou l'autre opération. Le résultat sera noté en dessous en rouge si il est négatif, en vert si il est positif et en noir si c'est 0.
