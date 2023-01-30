@@ -1,0 +1,12 @@
+A) Créer 1 page HTML d'accueil (index.html) et 2 pages qui seront des articles (event.html et media.html). Tout votre site portera sur une personnalité de votre choix (star, athlète,...)
+	1) Chaque élément de la page que je décris ci-après doit avoir un ID unique qui explique au mieux sa fonction. VOUS DEVREZ BIEN VOUS SOUVENIR DE CHACUN DES ID !!
+	2) Chaque groupe d'élément de la page qui ont des fonctions similaires dans ce que je décris ci-après devront avoir la même class. 
+	3) La page Index doit être composée de et 3 sous-titre h2. Chaque h2 correspond à un élément de la biographie de la personne (histoire, famille, enfance, philosophie, carrière,...). En dessous de chaque h2, un paragraphe suivra avec les informations correspondantes au h2. Veillez aussi à incorporer une petite image pour illustrer chacun des paragraphes.
+	4) Il doit y avoir un titre, un footer et une navbar. Dans votre footer il y aura votre copyright, dans la navbar, une navigation pour aller sur les articles et l'index. Ces 2 éléments doivent être présents sur TOUTES vos pages !!
+	5) L'article event.html sera une succession des évènements marquant de la personne classée par décénie. Un titre h2 représentera une décénie, suivra ensuite une liste des évènements qui ont été réalisé par cette personne durant cette décénie
+	6) media.html sera composée de 2 grande partie. un h2 image et un h2 vidéo. pour chacun de ceux-ci, 3 h3 qui seront les titres des images ou vidéo qui suivront.
+	7) Dans chaque footer. En dessous du copyright, un bouton devra être présent avec écrit dedans "try me".
+	8) essayez, au mieux, de respecter les normes d'accessibilités.
+	9) Créez aussi 3 dossier. Un pour le CSS, un pour le JS et un pour les ressources ( dedans, vous pouvez créer autant de sous dossier que vous voulez pour vidéo, photo,...). Créez aussi un ficher CSS et JS pour chacune de nos page internet
+	10) Linkez tout ensemble. Même si les CSS et les JS sont vide pour le moment.
+	Bonus) Si vous êtes arrivé ici et que tout le monde n'est pas prêt. Mettez en page votre site avec de CSS pour qu'il soit comme vous le souhaitez !

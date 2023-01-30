@@ -101,23 +101,26 @@ $password = Bouclepass();
 $race = Bouclerace();
 $classe= Boucleclasse();
 
-function Bouclepoint();
-$point = readline("Choisissez de 1 à 10 points pour attribuer à votre");
+function Bouclepoint()
+{
+
+	$point = readline("Choisissez de 1 à 10 points pour attribuer à votre");
+}
 
 
 
 // FonctionRecursive(3,18);
 // function FonctionRecursive($_nbr,$_limit)
 // {
-//     echo($_nbr."\n");
-//     if ($_nbr<$_limit)
-//     {
-//         $_nbr++;
-//         FonctionRecursive($_nbr,$_limit);
-//     }
-//     else
-//     {
-//         echo ("J'ai fini");
-//     }
-//}
-?>
+	//     echo($_nbr."\n");
+	//     if ($_nbr<$_limit)
+	//     {
+		//         $_nbr++;
+		//         FonctionRecursive($_nbr,$_limit);
+		//     }
+		//     else
+		//     {
+			//         echo ("J'ai fini");
+			//     }
+			//}
+	?>

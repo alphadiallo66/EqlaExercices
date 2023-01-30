@@ -1,0 +1,42 @@
+<(alert1)Bonjour, je vais vous afficher les tables multiplications de *1 à *10 que vous voulez, entrez le chiffre avec lequel je dois commencer, celui avec lequel je dois terminer et le pas entre ces deux bornes.
+
+(alert2)Quel est la première valeur à partir de laquelle je dois commencer à faire les tables de multiplications ?
+1
+(alert3)Quel est la dernière valeure avec laquelle je dois finir de faire la table de multiplications ?
+5
+(alert4)Quel est le pas entre chaque valeure (1 = tous les chiffres, 2 = un sur deux, 3 = un sur trois,...)
+1
+(alert5)Voulez vous afficher les tables de multiplication horizontalement(1) ou verticalement(2) ?
+1
+(alert6)Voici le résultat :
+1 - 2 - 3 - 4 - 5 - 6 - 7 - 8 - 9 - 10 
+2 - 4 - 6 - 8 - 10 - 12 - 14 - 16 - 18 - 20
+3 - 6 - 9 - 12 - 15 - 18 -21 - 24 - 27 - 30
+4 - 8 - 12 - 16 - 20 - 24 - 28 - 32 - 36 - 40
+5 - 10 - 15 - 20 - 25 - 30 - 35 - 40 - 45 - 50
+
+(alert7) Voulez vous recommencer ? (y/n)
+y
+(alert8) C'est reparti !
+(alert9)Quel est la première valeur à partir de laquelle je dois commencer à faire les tables de multiplications ?
+4
+(alert10)Quel est la dernière valeure avec laquelle je dois finir de faire la table de multiplications ?
+11
+(alert11)Quel est le pas entre chaque valeure (1 = tous les chiffres, 2 = un sur deux, 3 = un sur trois,...)
+3
+(alert12)Voulez vous afficher les tables de multiplication horizontalement(1) ou verticalement(2) ?
+2
+(alert13)Voici le résultat :
+4 - 7 - 10
+8 - 14 - 20
+12 - 21 - 30
+16 - 28 - 40
+20 - 35 - 50
+24 - 42 - 60
+28 - 49 - 70
+32 - 56 - 80
+36 - 63 - 90
+40 - 70 - 100
+(alert14) Voulez vous recommencer ? (y/n)
+n
+(alert15) Au revoir !
